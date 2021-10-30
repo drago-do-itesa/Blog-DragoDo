@@ -12,9 +12,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <!-- Font asome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+
+  <!-- Scrips api youtube -->
+  <script src="/javascript/metodos-api-youtube/ultimo-video.js"></script>
 </head>
 
-<body>
+<body onload="lastVideoData()">
   <!-- cabecero barra de navegacion-->
   <div class="container">
     <nav class="nav-main">
@@ -31,6 +37,17 @@
       </ul>
     </nav>
     <hr>
+    <!-- Termina navegacion-- -->
+    <!-- Muestra nuevo video -->
+    <header class="show-last-video">
+      <h2 id="video-title">Titulo del nuevo video</h2>
+      <p id="video-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore perspiciatis
+        deleniti error cupiditate
+        eaque magni dignissimos ducimus ipsum consequatur id, totam quo quas, laudantium rem corporis itaque, iste nihil
+        praesentium.</p>
+      <img id="video-img" src="" alt="">
+      <a id="video-url" href="https://www.youtube.com">Ver video <i class="fa-brands fa-youtube"></i> </a>
+    </header>
 
   </div>
 

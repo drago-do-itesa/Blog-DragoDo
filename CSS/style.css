@@ -65,3 +65,11 @@ ul {
   color: blue;
   font-weight: bolder;
 }
+
+/* ESTILO PARA SHOW-LAST-VIDEO */
+
+.show-last-video {
+  margin: 10px;
+  background-color: royalblue;
+  height: 350px;
+}
