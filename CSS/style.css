@@ -1,43 +1,67 @@
 * {
-  font-family: sans-serif;
-  /* margin: 100px; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.elements-float-left > * {
-  float: left;
+body {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-.elements-float-right > * {
-  float: right;
-}
-.elements-inline > * {
-  display: inline;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.header-sticky-top {
-  background-color: #6d6d6dee;
-  position: sticky;
-  top: 0;
-}
-
-.header-logo > img {
-  /* width: 50px;
-  height: 50px; */
-  /* Responsivo?? */
-  width: 5%;
-}
-
-.header-button > a {
-  padding: 10px;
+a {
   text-decoration: none;
-  background-color: khaki;
-  margin: 3px;
-  border-radius: 5px;
 }
 
-.header-title {
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* creando estilos de barra de navegacion  */
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0px;
+}
+
+/* imagen de navegacion */
+.nav-brand {
+  width: 50px;
+  align-items: center;
+}
+
+/* navegacion botones */
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+/* Titulo del nav */
+.nav-main p {
+  flex: 1;
+  margin-left: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/* estilo a botones nav */
+.nav-main ul li a {
+  color: black;
+}
+.nav-main ul li a:hover {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: bolder;
 }
