@@ -37,7 +37,10 @@ function lastVideoData() {
       //Ahora utilizamos estas variables para modificar el DOM y que se actualizen los datos de manera automatica de acuerdo al ultimo video subido
       document.getElementById("video-title").textContent = titulo;
       document.getElementById("video-description").textContent = descripcion;
-      document.getElementById("video-img").setAttribute("src", url_img);
+      document.getElementById("show-last-video").style.backgroundImage =
+        "url('" + url_img + "')";
+
+      console.log(url_img);
       document.getElementById("video-url").setAttribute("href", url_video);
     }
   };

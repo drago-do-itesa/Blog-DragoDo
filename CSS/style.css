@@ -68,8 +68,47 @@ ul {
 
 /* ESTILO PARA SHOW-LAST-VIDEO */
 
-.show-last-video {
+#show-last-video {
   margin: 10px;
-  background-color: royalblue;
+  background-image: url(/assets/logos-y-marca/banner-youtube.png);
+  background-size: 100%;
+  background-position: center;
   height: 350px;
+  border-radius: 20px;
+}
+#show-last-video > * {
+  border-radius: 20px;
+}
+
+.gradiente {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.95)
+  );
+  width: 100%;
+  height: 100%;
+}
+
+#show-last-video > div > h2 {
+  padding: 150px 10px 0px;
+}
+
+#show-last-video > div > * {
+  color: white;
+  padding: 0px 20px;
+  text-shadow: black 2px 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#show-last-video > div > a {
+  justify-content: flex-end;
+}
+#show-last-video > div > a:hover {
+  color: red;
+}
+#show-last-video > div > a > i {
+  padding: 0px 10px;
 }
