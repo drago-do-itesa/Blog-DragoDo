@@ -42,12 +42,10 @@ function videoDataJSON() {
         url_video.push(
           "https://www.youtube.com/watch?v=" + datos.items[index].id.videoId
         );
-        url_blog.push("/blogs/" + datos.items[index].id.videoId);
+        url_blog.push("/blogs/" + datos.items[index].id.videoId + ".html");
       }
 
       // metodos para rellenar cabecera y grid
-      lastVideoData(title[0], description[0], url_img[0], url_video[0]);
-
       videosOnGrid(title, description, url_img, url_video, url_blog);
     }
   };
@@ -76,13 +74,12 @@ function videosOnGrid(title, description, url_img, url_video, url_blog) {
 
     identificador++;
   }
-}
 
-function lastVideoData(title, description, url_img, url_video) {
+  // codigo ultimo video
   //Ahora utilizamos estas variables para modificar el DOM y que se actualizen los datos de manera automatica de acuerdo al ultimo video subido
-  document.getElementById("video-title").textContent = title;
-  document.getElementById("video-description").textContent = description;
+  document.getElementById("video-title").textContent = title[0];
+  document.getElementById("video-description").textContent = description[0];
   document.getElementById("show-last-video").style.backgroundImage =
-    "url('" + url_img + "')";
-  document.getElementById("video-url").setAttribute("href", url_video);
+    "url('" + url_img[0] + "')";
+  document.getElementById("video-url").setAttribute("href", url_video[0]);
 }

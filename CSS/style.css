@@ -66,6 +66,25 @@ ul {
   font-weight: bolder;
 }
 
+/* estilos para footer  de la pagina */
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 20px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap singnifica espaciado interno de cada grilla */
+  gap: 25px;
+  margin-bottom: 10px;
+}
+.footer-row > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* ESTILO PARA SHOW-LAST-VIDEO */
 
 #show-last-video {
@@ -157,4 +176,28 @@ ul {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* Clase para estilo de redes sociales*/
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  font-size: 150px;
+}
+.social #fb {
+  color: #3b5998;
+}
+.social #tw {
+  color: #1da1f2;
+}
+.social #yt {
+  color: #ff0000;
+}
+.social #ig {
+  color: #e1306c;
+}
+.social a :hover {
+  border-bottom: blue solid 2px;
 }
